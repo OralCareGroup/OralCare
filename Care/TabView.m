@@ -7,6 +7,7 @@
 //
 
 #import "TabView.h"
+#import "TabButton.h"
 
 @implementation TabView
 
@@ -15,14 +16,20 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
+    
+    
+    NSArray *normalimages =@[@"image_HomeIcon",@"image_Assistant",@"image_FAQIcon",@"image_FAQIcon",@"image_MoreIcon"];
+    
+    NSArray *seletedimages = @[@"image_HomeIconSelected",@"image_AssistantSel",@"image_FAQIconSelected",@"image_FAQIconSelected",@"image_MoreIconSelected"];
+    NSArray *itemName = @[@"主页",@"消息",@"圈子",@"地图",@"我的",];
     for (int i=0; i<5; i++) {
-        UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+        TabButton *tabButton=[[TabButton alloc] initWithImage:normalimages[i] andTitle:itemName[i]];
+        [tabButton setImage:[UIImage imageNamed:seletedimages[i]] forState:UIControlStateSelected];
         
-        
-        button.frame=CGRectMake(i*75, 0, 75, 49);
-        button.tag=i;
-        [button addTarget:self action:@selector(selectedTab:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:button];
+        tabButton.frame=CGRectMake(i*75, 0, 75, 49);
+        tabButton.tag=i;
+        [tabButton addTarget:self action:@selector(selectedTab:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:tabButton];
     }
 
 }

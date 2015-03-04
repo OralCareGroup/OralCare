@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ABCE5701AA73BD0007403CD /* TabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCE56F1AA73BD0007403CD /* TabButton.m */; };
 		CCCA2D9E1AA51ABF007FE571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCA2D9D1AA51ABF007FE571 /* main.m */; };
 		CCCA2DA11AA51ABF007FE571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCA2DA01AA51ABF007FE571 /* AppDelegate.m */; };
 		CCCA2DA41AA51ABF007FE571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCA2DA31AA51ABF007FE571 /* ViewController.m */; };
@@ -67,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ABCE56E1AA73BD0007403CD /* TabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabButton.h; sourceTree = "<group>"; };
+		2ABCE56F1AA73BD0007403CD /* TabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabButton.m; sourceTree = "<group>"; };
 		CCCA2D981AA51ABF007FE571 /* Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCA2D9C1AA51ABF007FE571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCCA2D9D1AA51ABF007FE571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +184,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABCE5671AA72831007403CD /* other */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2DA51AA51ABF007FE571 /* Main.storyboard */,
+				CCCA2DA81AA51ABF007FE571 /* Images.xcassets */,
+				CCCA2DAA1AA51ABF007FE571 /* LaunchScreen.xib */,
+				CCCA2D9F1AA51ABF007FE571 /* AppDelegate.h */,
+				CCCA2DA01AA51ABF007FE571 /* AppDelegate.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		2ABCE5681AA72852007403CD /* message */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2E321AA53ACB007FE571 /* MessageViewController.h */,
+				CCCA2E331AA53ACB007FE571 /* MessageViewController.m */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		2ABCE5691AA7285D007403CD /* home */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2DD31AA5324E007FE571 /* HomeViewController.h */,
+				CCCA2DD41AA5324E007FE571 /* HomeViewController.m */,
+				CCCA2E211AA533CC007FE571 /* CTableViewCell.h */,
+				CCCA2E221AA533CC007FE571 /* CTableViewCell.m */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		2ABCE56A1AA72866007403CD /* group */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2E351AA53AD7007FE571 /* GroupViewController.h */,
+				CCCA2E361AA53AD7007FE571 /* GroupViewController.m */,
+			);
+			name = group;
+			sourceTree = "<group>";
+		};
+		2ABCE56B1AA72871007403CD /* me */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2E2B1AA53961007FE571 /* NavLoginViewController.h */,
+				CCCA2E2C1AA53961007FE571 /* NavLoginViewController.m */,
+				CCCA2DC11AA51B4B007FE571 /* LoginViewController.h */,
+				CCCA2DC21AA51B4B007FE571 /* LoginViewController.m */,
+				CCCA2E3B1AA53AED007FE571 /* SelfViewController.h */,
+				CCCA2E3C1AA53AED007FE571 /* SelfViewController.m */,
+				CCCA2DCA1AA5287C007FE571 /* RegisterSeViewController.h */,
+				CCCA2DCB1AA5287C007FE571 /* RegisterSeViewController.m */,
+				CCCA2DC71AA52834007FE571 /* RegisterViewController.h */,
+				CCCA2DC81AA52834007FE571 /* RegisterViewController.m */,
+			);
+			name = me;
+			sourceTree = "<group>";
+		};
+		2ABCE56C1AA72878007403CD /* map */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2E381AA53AE0007FE571 /* MapViewController.h */,
+				CCCA2E391AA53AE0007FE571 /* MapViewController.m */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		2ABCE56D1AA7299E007403CD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA2DCD1AA530AB007FE571 /* TabBarViewController.h */,
+				CCCA2DCE1AA530AB007FE571 /* TabBarViewController.m */,
+				CCCA2DD01AA530E6007FE571 /* TabView.h */,
+				CCCA2DD11AA530E6007FE571 /* TabView.m */,
+				2ABCE56E1AA73BD0007403CD /* TabButton.h */,
+				2ABCE56F1AA73BD0007403CD /* TabButton.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		CCCA2D8F1AA51ABF007FE571 = {
 			isa = PBXGroup;
 			children = (
@@ -206,37 +289,15 @@
 		CCCA2D9A1AA51ABF007FE571 /* Care */ = {
 			isa = PBXGroup;
 			children = (
-				CCCA2D9F1AA51ABF007FE571 /* AppDelegate.h */,
-				CCCA2DA01AA51ABF007FE571 /* AppDelegate.m */,
+				2ABCE56D1AA7299E007403CD /* main */,
+				2ABCE56C1AA72878007403CD /* map */,
+				2ABCE56B1AA72871007403CD /* me */,
+				2ABCE56A1AA72866007403CD /* group */,
+				2ABCE5691AA7285D007403CD /* home */,
+				2ABCE5681AA72852007403CD /* message */,
+				2ABCE5671AA72831007403CD /* other */,
 				CCCA2DA21AA51ABF007FE571 /* ViewController.h */,
 				CCCA2DA31AA51ABF007FE571 /* ViewController.m */,
-				CCCA2DD01AA530E6007FE571 /* TabView.h */,
-				CCCA2DD11AA530E6007FE571 /* TabView.m */,
-				CCCA2E211AA533CC007FE571 /* CTableViewCell.h */,
-				CCCA2E221AA533CC007FE571 /* CTableViewCell.m */,
-				CCCA2E3B1AA53AED007FE571 /* SelfViewController.h */,
-				CCCA2E3C1AA53AED007FE571 /* SelfViewController.m */,
-				CCCA2E381AA53AE0007FE571 /* MapViewController.h */,
-				CCCA2E391AA53AE0007FE571 /* MapViewController.m */,
-				CCCA2E351AA53AD7007FE571 /* GroupViewController.h */,
-				CCCA2E361AA53AD7007FE571 /* GroupViewController.m */,
-				CCCA2E321AA53ACB007FE571 /* MessageViewController.h */,
-				CCCA2E331AA53ACB007FE571 /* MessageViewController.m */,
-				CCCA2E2B1AA53961007FE571 /* NavLoginViewController.h */,
-				CCCA2E2C1AA53961007FE571 /* NavLoginViewController.m */,
-				CCCA2DCA1AA5287C007FE571 /* RegisterSeViewController.h */,
-				CCCA2DCB1AA5287C007FE571 /* RegisterSeViewController.m */,
-				CCCA2DC71AA52834007FE571 /* RegisterViewController.h */,
-				CCCA2DC81AA52834007FE571 /* RegisterViewController.m */,
-				CCCA2DCD1AA530AB007FE571 /* TabBarViewController.h */,
-				CCCA2DCE1AA530AB007FE571 /* TabBarViewController.m */,
-				CCCA2DD31AA5324E007FE571 /* HomeViewController.h */,
-				CCCA2DD41AA5324E007FE571 /* HomeViewController.m */,
-				CCCA2DC11AA51B4B007FE571 /* LoginViewController.h */,
-				CCCA2DC21AA51B4B007FE571 /* LoginViewController.m */,
-				CCCA2DA51AA51ABF007FE571 /* Main.storyboard */,
-				CCCA2DA81AA51ABF007FE571 /* Images.xcassets */,
-				CCCA2DAA1AA51ABF007FE571 /* LaunchScreen.xib */,
 				CCCA2D9B1AA51ABF007FE571 /* Supporting Files */,
 			);
 			path = Care;
@@ -468,6 +529,7 @@
 				CCCA2E1E1AA5339E007FE571 /* UIScrollView+MJRefresh.m in Sources */,
 				CCCA2E371AA53AD7007FE571 /* GroupViewController.m in Sources */,
 				CCCA2DCC1AA5287C007FE571 /* RegisterSeViewController.m in Sources */,
+				2ABCE5701AA73BD0007403CD /* TabButton.m in Sources */,
 				CCCA2DCF1AA530AB007FE571 /* TabBarViewController.m in Sources */,
 				CCCA2DFD1AA53378007FE571 /* SDWebImageDownloader.m in Sources */,
 				CCCA2E1D1AA5339E007FE571 /* MJRefreshHeaderView.m in Sources */,
@@ -611,10 +673,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = Care/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -622,10 +687,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = Care/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

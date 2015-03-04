@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nyJ-5H-ZGW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nyJ-5H-ZGW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-621.5" y="372.5"/>
+            <point key="canvasLocation" x="-404.5" y="428.5"/>
         </scene>
         <!--登录-->
         <scene sceneID="1bP-32-o3I">
@@ -132,14 +132,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahz-7B-920">
-                                <rect key="frame" x="235" y="203" width="140" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="获取验证码">
-                                    <color key="titleColor" red="0.0" green="0.86666673419999996" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZn-6x-FlH">
                                 <rect key="frame" x="0.0" y="312" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.86666673419999996" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
@@ -152,19 +144,34 @@
                                     <segue destination="Hb9-cB-m8w" kind="push" id="t7a-eh-Dzl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="329-bn-UFc">
-                                <rect key="frame" x="142" y="268" width="90" height="30"/>
-                                <state key="normal" title="同意用户协议">
-                                    <color key="titleColor" red="0.0" green="0.86666673419999996" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcL-Sp-NWt">
                                 <rect key="frame" x="0.0" y="203" width="234" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahz-7B-920">
+                                <rect key="frame" x="235" y="203" width="140" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" red="0.0" green="0.86666673419999996" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU5-mP-H6e">
+                                <rect key="frame" x="235" y="265" width="30" height="30"/>
+                                <state key="normal" title="同意">
+                                    <color key="titleColor" red="0.3108039983" green="0.864642986" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="329-bn-UFc">
+                                <rect key="frame" x="97" y="265" width="90" height="30"/>
+                                <state key="normal" title="阅读用户协议">
+                                    <color key="titleColor" red="0.0" green="0.86666673419999996" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.74117648599999997" green="0.96078437569999997" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -224,11 +231,11 @@
             </objects>
             <point key="canvasLocation" x="1334.5" y="454.5"/>
         </scene>
-        <!--Item-->
+        <!--主页-->
         <scene sceneID="AMv-hq-7SL">
             <objects>
                 <navigationController id="r5Y-Bd-XGd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8YS-Nq-FCR"/>
+                    <tabBarItem key="tabBarItem" title="主页" id="8YS-Nq-FCR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="14m-0X-YBl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -340,11 +347,11 @@
             </objects>
             <point key="canvasLocation" x="-821.5" y="2829.5"/>
         </scene>
-        <!--Item-->
+        <!--消息-->
         <scene sceneID="yj8-m7-ZBw">
             <objects>
                 <navigationController id="MgH-mz-GiB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7QX-OE-qgp"/>
+                    <tabBarItem key="tabBarItem" title="消息" id="7QX-OE-qgp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqR-wH-TGI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -358,11 +365,11 @@
             </objects>
             <point key="canvasLocation" x="90.5" y="2061.5"/>
         </scene>
-        <!--Item-->
+        <!--圈子-->
         <scene sceneID="wjS-KZ-CiR">
             <objects>
                 <navigationController id="hhg-KG-nkE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yYa-oX-5Sn"/>
+                    <tabBarItem key="tabBarItem" title="圈子" id="yYa-oX-5Sn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OeH-2r-Z6x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -376,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="106.5" y="2837.5"/>
         </scene>
-        <!--Item-->
+        <!--地图-->
         <scene sceneID="bAn-kM-ATb">
             <objects>
                 <navigationController id="8IL-Sp-pcR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="alE-IG-9NM"/>
+                    <tabBarItem key="tabBarItem" title="地图" id="alE-IG-9NM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TjG-a3-L48">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -394,11 +401,11 @@
             </objects>
             <point key="canvasLocation" x="106.5" y="3621.5"/>
         </scene>
-        <!--Item-->
+        <!--我的-->
         <scene sceneID="Kv6-2d-58N">
             <objects>
                 <navigationController id="9ru-G3-1BI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="efW-qN-Dk6"/>
+                    <tabBarItem key="tabBarItem" title="我的" id="efW-qN-Dk6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qrd-Ex-Bci">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
