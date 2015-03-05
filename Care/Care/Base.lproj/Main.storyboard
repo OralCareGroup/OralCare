@@ -337,15 +337,15 @@
                     </tabBar>
                     <connections>
                         <segue destination="r5Y-Bd-XGd" kind="relationship" relationship="viewControllers" id="oW8-uz-hpR"/>
-                        <segue destination="MgH-mz-GiB" kind="relationship" relationship="viewControllers" id="jfD-3r-rk6"/>
                         <segue destination="hhg-KG-nkE" kind="relationship" relationship="viewControllers" id="LTr-WK-VX1"/>
+                        <segue destination="MgH-mz-GiB" kind="relationship" relationship="viewControllers" id="jfD-3r-rk6"/>
                         <segue destination="8IL-Sp-pcR" kind="relationship" relationship="viewControllers" id="XnO-zL-Nr1"/>
                         <segue destination="9ru-G3-1BI" kind="relationship" relationship="viewControllers" id="WZ3-Fa-b77"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbt-8e-1vP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-821.5" y="2829.5"/>
+            <point key="canvasLocation" x="-822.5" y="2829.5"/>
         </scene>
         <!--消息-->
         <scene sceneID="yj8-m7-ZBw">
