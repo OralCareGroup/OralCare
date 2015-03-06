@@ -76,10 +76,7 @@
 -(void)headerrefresh{
     //数据传好
     [self getDataFromServeRefreshOrAdd:KREGRESH];
-    
-    
-    
-}
+   }
 
 -(void)footerrefresh{
     
